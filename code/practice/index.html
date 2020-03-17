@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .flex-container {
+        display: flex;
+        height: 100vh;
+        overflow: hidden;
+      }
+      .flex-item {
+        flex: 1;
+      }
+      .flex-item.a {
+        background: #f00;
+        margin-right: 5px;
+      }
+      .flex-item.b {
+        margin-left: 5px;
+      }
+
+      .flexb-item {
+        flex: 1;
+        flex-direction: column;
+        min-height: 50vh;
+      }
+      .flexb-item.c {
+        background: #c00;
+        margin-bottom: 10px;
+      }
+      .flexb-item.d {
+        background: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="flex-item a">
+        a
+      </div>
+      <div class="flex-item b">
+        <div class="flexb-item c">
+          c
+        </div>
+        <div class="flexb-item d">
+          d
+        </div>
+      </div>
+    </div>
+    <script></script>
+  </body>
+</html>
